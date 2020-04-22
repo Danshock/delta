@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative './basket/basket'
+require_relative 'basket'
 
 class Checkout
   attr_reader :prices, :basket

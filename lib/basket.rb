@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require './lib/discounts/discounts'
-require './lib/discounts/discount_manager'
+require 'discounts'
+require 'discount_manager'
 require_relative './item'
 require_relative './order_item'
 
