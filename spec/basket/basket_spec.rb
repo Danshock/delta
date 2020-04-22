@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require 'basket'
+require './lib/basket/basket'
 
 RSpec.describe Basket do
   describe '#calculate_total' do
     subject(:total) { basket.calculate_total }
 
     let(:basket) { Basket.new(pricing_rules) }
-    let(:pricing_rules) {
+    let(:pricing_rules) do
       {
         apple: 10,
         orange: 20,
@@ -17,7 +17,7 @@ RSpec.describe Basket do
         pineapple: 100,
         mango: 200
       }
-    }
+    end
 
     context 'when no offers apply' do
       before do
