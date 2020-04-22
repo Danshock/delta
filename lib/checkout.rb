@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require_relative './basket'
-require_relative './order_item'
+require_relative './basket/basket'
 
 class Checkout
   attr_reader :prices, :basket
@@ -13,12 +12,6 @@ class Checkout
   end
 
   def total
-    basket_total
-  end
-
-  private
-
-  def basket_total
     basket.calculate_total
   end
 end
