@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require './lib/basket/basket'
+require 'basket'
 
 RSpec.describe Basket do
   describe '#calculate_total' do

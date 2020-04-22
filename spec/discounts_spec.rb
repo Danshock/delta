@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require './lib/discounts/discounts'
-require './lib/basket/order_item'
+require 'discounts'
+require 'order_item'
 
 RSpec.describe Discounts do
   describe '#apply' do
